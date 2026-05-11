@@ -143,40 +143,76 @@ income.txt
 using authenticated hashing.
 
 HMAC Generation
+
 OpenSSL Command
+
 openssl dgst -sha256 -hmac cisco123 income.txt
-Why HMAC Is More Secure Than Standard Hashing
-Traditional Hashing (MD5/SHA)
+
+# Why HMAC Is More Secure Than Standard Hashing
+
+# Traditional Hashing (MD5/SHA)
+
 Verifies integrity only
+
 Cannot confirm authenticity
+
 Vulnerable if attacker recalculates hashes
-HMAC
+
+# HMAC
+
 Uses a secret cryptographic key
+
 Verifies:
+
 Integrity
+
 Authenticity
+
 Prevents attackers from generating valid signatures without the secret key
-Cybersecurity Concepts Demonstrated
+
+# Cybersecurity Concepts Demonstrated
+
 Digital Forensics
+
 Incident Response
+
 File Integrity Monitoring
+
 Secure Backup Verification
+
 Cryptographic Validation
+
 Hash-Based Authentication
+
 Evidence Preservation
+
 Security Escalation Procedures
+
 Security Lessons Learned
-Key Findings
+
+# Key Findings
+
 Hash verification is critical after cyber incidents
+
 Even a one-character change alters the hash completely
+
 HMAC provides stronger integrity assurance than regular hashing
+
 Backups should always be verified before restoration
-Recommendations
+
+# Recommendations
 Improve Organizational Security By:
+
 Implementing automated File Integrity Monitoring (FIM)
+
 Using SHA256 instead of MD5
+
 Enforcing secure backup policies
+
 Monitoring unauthorized file modifications
+
 Encrypting sensitive archives
+
 Deploying centralized logging and SIEM solutions
+
 Applying strict access control to FTP servers
