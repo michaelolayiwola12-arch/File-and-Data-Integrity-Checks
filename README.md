@@ -110,13 +110,21 @@ Username: mike
 Password: cisco123
 
 Retrieve Files
+
 get NEclients.txt
+
 get NWclients.txt
+
 get Nclients.txt
+
 get SEclients.txt
+
 get SWclients.txt
+
 get Sclients.txt
+
 Verify Downloads
+
 dir
 
 # Part 2 — Hashing & File Integrity Validation
@@ -124,6 +132,7 @@ dir
 MD5 Hash Verification
 
 Command Used
+
 echo -n 'file-content' | md5sum
 
 Each downloaded file was hashed and compared against the original archived hash values.
@@ -135,10 +144,15 @@ Integrity Verification Results
 File	Status
 
 NEclients.txt	Valid
+
 NWclients.txt	Valid
+
 Nclients.txt	Valid
+
 SEclients.txt	Tampered
+
 SWclients.txt	Valid
+
 Sclients.txt	Valid
 
 Security Incident Detected
@@ -180,11 +194,17 @@ Evidence Preservation
 The compromised file was securely transferred to Sally’s workstation for deeper forensic investigation.
 
 FTP Commands
+
 ftp hq.corp
+
 Credentials
+
 Username: sally
+
 Password: cisco321
+
 Download Tampered File
+
 get SEclients.txt
 
 # Part 3 — HMAC Integrity Verification
@@ -256,6 +276,7 @@ HMAC provides stronger integrity assurance than regular hashing
 Backups should always be verified before restoration
 
 # Recommendations
+
 Improve Organizational Security By:
 
 Implementing automated File Integrity Monitoring (FIM)
